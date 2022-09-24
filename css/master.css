@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0075ff;
+  border-radius: 150px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0d69d5;
+}
+
+.page {
+  background-color: #f1f5f9;
+  min-height: 100vh;
+}
+
+/*start sideabre*/
+.slider {
+  width: 250px;
+  box-shadow: 0 0 10px #ddd;
+}
+.slider h3 {
+  margin-bottom: 50px;
+}
+.slider h3::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  width: 88px;
+  height: 2px;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: black;
+}
+.slider h3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -29px;
+  background-color: black;
+  border: 4px solid white;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+.slider ul li .active {
+  background-color: #f6f6f6;
+}
+.slider ul li a {
+  transition: 0.3s all;
+  margin-bottom: 5px;
+}
+.slider ul li a:hover {
+  background-color: #f6f6f6;
+}
+.slider ul li a span {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .slider {
+    width: 62px;
+    padding: 10px;
+  }
+  .slider h3 {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  .slider h3::before, .slider h3::after {
+    display: none;
+  }
+  .slider span {
+    display: none;
+  }
+}
+.content {
+  overflow: hidden;
+}
+.content .head .search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content .head .search input {
+  border: 1px solid #ccc;
+  border-radius: 10px !important;
+  margin-left: 5px;
+  padding-left: 30px;
+  width: 160px;
+  transition: width 0.3s;
+  font-weight: 600;
+}
+.content .head .search input:focus {
+  width: 200px;
+}
+.content .head .search input:focus::-moz-placeholder {
+  opacity: 0;
+  padding-left: 20px;
+}
+.content .head .search input:focus:-ms-input-placeholder {
+  opacity: 0;
+  padding-left: 20px;
+}
+.content .head .search input:focus::placeholder {
+  opacity: 0;
+  padding-left: 20px;
+}
+.content .head .search .icon {
+  position: absolute;
+  left: 10%;
+  margin-bottom: 6px;
+}
+.content .head .icons .notification {
+  font-size: 18px;
+}
+.content .head .icons .notification::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #f44336;
+  border-radius: 50%;
+  right: -3px;
+  top: -3px;
+}
+.content .head .icons img {
+  width: 32px;
+  height: 32px;
+  margin-left: 15px;
+}
+
+.content h1 {
+  margin: 20px 20px 20px 40px;
+}
+.content h1::after, .content h1::before {
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+.content h1::before {
+  background-color: white;
+  width: 150px;
+}
+.content h1::after {
+  background-color: black;
+  width: 40px;
+}
+
+.wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: minmax(450px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}/*# sourceMappingURL=master.css.map */
