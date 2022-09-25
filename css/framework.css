@@ -1,3 +1,43 @@
+.bg-eee {
+  background-color: rgba(238, 238, 238, 0.838);
+}
+
+.c-eee {
+  color: #eee;
+}
+
+.bg-w {
+  background-color: white;
+}
+
+.c-w {
+  color: white;
+}
+
+.c-black {
+  color: #000;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.c-gray {
+  color: #888;
+}
+
+.bg-gray {
+  color: red;
+}
+
+.bg-blue {
+  background-color: #0075ff;
+}
+
+.c-blue {
+  color: #0075ff;
+}
+
 .d-flex {
   display: flex;
 }
@@ -24,7 +64,7 @@
   justify-content: center;
 }
 
-.justify-between {
+.flex-between {
   display: flex;
   justify-content: space-between;
 }
@@ -52,6 +92,42 @@
 
 .w-full {
   width: 100%;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mx-10 {
+  margin: 0 10px;
+}
+
+.my-10 {
+  margin: 10px 0;
 }
 
 .m-20 {
@@ -126,14 +202,6 @@
   padding: 20px 0;
 }
 
-.bg-w {
-  background-color: white;
-}
-
-.c-black {
-  color: black;
-}
-
 .p-relative {
   position: relative;
 }
@@ -146,21 +214,63 @@
   position: fixed;
 }
 
+.flex-1 {
+  flex: 1;
+}
+
 /* text */
 .txt-c {
   text-align: center;
+}
+
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .fs-14 {
   font-size: 14px;
 }
 
+.fs-15 {
+  font-size: 15px;
+}
+
 .list-none {
   list-style: none;
 }
 
+.red-5 {
+  border-radius: 5px;
+}
+
 .red-6 {
   border-radius: 6px;
+}
+
+.red-7 {
+  border-radius: 7px;
+}
+
+.red-8 {
+  border-radius: 8px;
+}
+
+.red-10 {
+  border-radius: 10px;
+}
+
+.red-15 {
+  border-radius: 15px;
+}
+
+.b-none {
+  border: none;
+}
+
+.shadow-1 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Component*/
@@ -176,8 +286,19 @@
   align-items: center;
 }
 
+.btn {
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+.btn:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.19);
+}
+
 @media screen and (max-width: 767px) {
   .block-sm {
     display: block;
+  }
+  .sm-hide {
+    display: none;
   }
 }/*# sourceMappingURL=framework.css.map */

@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/master.css"> 
+    <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/framework.css">
     <title>Dashbord</title>
-    <!-- Google Fonts -->  
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
@@ -19,7 +19,7 @@
 
 <body>
     <div class="page d-flex">
-        <div class="slider bg-w p-20 p-relative ">
+        <div class="slider bg-w   p-relative ">
             <h3 class="p-relative txt-c">Admin</h3>
             <ul class="list-none p-0">
                 <li>
@@ -30,7 +30,7 @@
                 </li>
                 <li>
                     <a class="d-flex align-center fs-14 red-6 p-10 c-black" href="index.html">
-                        <i class="fa fa-gear"></i>                        
+                        <i class="fa fa-gear"></i>
                         <!-- <i class="fa-solid fa-thumbs-up fa-5x"></i> -->
 
                         <span>Setting</span>
@@ -38,7 +38,7 @@
                 </li>
                 <li>
                     <a class=" d-flex align-center fs-14 red-6 p-10 c-black" href="index.html">
-                        <i class="fa-regular fa-user"></i>                        <span>Profile</span>
+                        <i class="fa-regular fa-user"></i> <span>Profile</span>
                     </a>
                 </li>
                 <li>
@@ -89,13 +89,32 @@
             </div>
             <h1 class="p-relative ">Dashbord</h1>
             <div class="wrapper d-grid gap-20">
-                <div class=" welcome bg-w red-10 txt-c-sm block-sm">
-                    <h1>Welcome</h1>
-               <img src="Image/welcome.png" width="400px" alt="" srcset="">
+                <div class="welcome shadow-1 bg-w red-6 txt-c-sm block-sm">
+                    <div class="intro p-20 flex-between bg-eee">
+                        <div>
+                            <h2 class="m-0">welcome</h2>
+                            <p class="c-gray mt-5">Shazloka</p>
+                        </div>
+                        <img class="sm-hide" src="Image/team-talk.webp" width="250px" alt="" srcset="">
+                    </div>
+                    <img src="Image/avatar.png" class="avatar" alt="">
+                    <div class=" block-sm body    txt-c   py-20 mt-20 mb-20  ">
+                        <div>Ahmed Elshazly <span class="d-block c-gray fs-14 mt-10 ">Developer</span> </div>
+                        <div>80 <span class="d-block c-gray fs-14 mt-10 ">Developer</span> </div>
+                        <div>8500$ <span class="d-block c-gray fs-14 mt-10 ">Earned</span> </div>
+                    </div>
+                    <a href="profile.html" class="visit d-block fs-14 red-6 bg-blue c-w w-fit ">Profile</a>
                 </div>
-            </div>           
-             
-           
+                <div class="quick-draft shadow-1  bg-w red-6 p-20  ">
+                    <h2 class="mt-0 mb-10">Quick Draft</h2>
+                    <p class="mt-0 mb-20 c-gray fs-15">Write A Draft For Your Ideas</p>
+                    <form action="">
+                        <input type="text"placeholder='Title' class="d-block mb-20 w-full p-10 bg-eee red-10 ">
+                        <textarea class="d-block mb-20 w-full p-10 b-none bg-eee red-6" placeholder='Your Thoght' style="height: 158px; width: 381px;"  rows="10"></textarea>
+                        <input type="submit" class="save d-block fs-14 red-6 bg-blue c-w w-fit btn" value="Save ">
+                    </form>
+                </div>
+            </div>   
         </div>
     </div>
 </body>
