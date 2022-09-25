@@ -257,6 +257,14 @@ a {
     }
 
 }
+@media screen and (max-width:1200px) {
+    .wrapper {
+        grid-template-columns: minmax(100%, 1fr); 
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
 
 /**Start Welcome */
 .welcome {
@@ -387,5 +395,90 @@ a {
         }
 
 
+    }
+}
+
+/**Strat Yearly Targets */
+ .targets{
+    padding-bottom: 0px !important;
+ }
+.targets .target-row .icon{
+    width: 80px;
+    height: 74px;
+    margin-right: 15px;
+}
+.targets .details{
+    flex: 1;
+}
+.targets .details .progress{
+    height: 4px;
+}
+.targets .details .progress>span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.targets .details .progress>span span{
+    position: absolute;
+    right: -16px;
+    bottom: 16px;
+    padding: 3px 5px;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    box-shadow: 0 0 9px #ddd;
+    user-select: none;
+    &::after{
+        content: '';
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 0 10x #ddd;
+
+    }
+}
+.targets .details .progress> .blue span::after{
+    border-top-color: $blue-color;
+
+}
+.targets .details .progress> .orange span::after{
+    border-top-color: $orange-color;
+
+}
+.targets .details .progress> .green span::after{
+    border-top-color: $green-color;
+
+}
+.blue .icon , .blue .progress{
+    background-color: rgba($color: $blue-color, $alpha: 0.2);
+}
+.orange .icon , .orange .progress{
+    background-color: rgba($color: $orange-color, $alpha: 0.2);
+}
+.green .icon , .green .progress{
+    background-color: rgba($color: $green-color, $alpha: 0.2);
+}
+
+ 
+/**end Yearly Targets */
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tickets .box{
+    @include flex-center();
+    flex-direction: column;  
+    width: calc(50% - 10px);
+    @media (max-width:767px) {
+        width: 100%;
+    }
+    @media (max-width:1200px) {
+        
     }
 }

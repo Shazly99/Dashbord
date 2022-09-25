@@ -15,8 +15,13 @@ $grey-color: #888;
 
 .c-eee {
     color: $bg-eee;
+} 
+.c-red{
+    color: $red-color;
 }
-
+.bg-red{
+    background-color: $red-color;
+}
 .bg-w {
     background-color: $bg-light;
 }
@@ -24,7 +29,6 @@ $grey-color: #888;
 .c-w {
     color: $bg-light;
 }
-
 .c-black {
     color: $color-black ;
 }
@@ -32,19 +36,28 @@ $grey-color: #888;
 .bg-black {
     background-color: $color-black ;
 }
-
+.c-orange{
+    color: $orange-color;
+}
+.bg-orange{
+    background-color: $orange-color;
+}
+.c-green{
+    color: $green-color;
+}
+.bg-green{
+    background-color: $green-color;
+}
 .c-gray {
     color: $grey-color;
 }
-
 .bg-gray {
-    color: red;
+    color: $green-color;
 }
 
 .bg-blue {
     background-color: $blue-color;
 }
-
 .c-blue {
     color: $blue-color;
 }
@@ -118,7 +131,9 @@ $grey-color: #888;
 .mt-5 {
     margin-top: 5px;
 }
-
+.mb-5{
+    margin-bottom: 5px;
+}
 .m-10 {
     margin: 10px;
 }
@@ -255,7 +270,12 @@ $grey-color: #888;
 .fs-15 {
     font-size: 15px;
 }
-
+.fs-25{
+    font-size: 25px;
+}
+.fw-bold{
+    font-weight: bold;
+}
 // ul
 .list-none {
     list-style: none;
@@ -284,9 +304,15 @@ $grey-color: #888;
 .b-none{
     border: none;
 }
+.border-1{
+    border: 1px solid #ddd;
+}
 //     box-shadow
 .shadow-1{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.shadow-1-c-ddd{
+    box-shadow: 0 0 5px #ddd;
 }
 /* Component*/
 
@@ -300,6 +326,9 @@ $grey-color: #888;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.f-wrap{
+    flex-wrap: wrap;
 }
 .btn{
     padding: 4px 10px ;
