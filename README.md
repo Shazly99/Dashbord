@@ -4,8 +4,8 @@
 
 </h1>
 <h1>Web Screen </h1>
-<img align="center" src="https://user-images.githubusercontent.com/57854391/192272526-f55739b1-7697-4b81-8cd5-736527d4ff3a.png">
+<img align="center" src="https://user-images.githubusercontent.com/57854391/192365619-94f92616-2c94-4ab0-83e7-67667be88f22.png">
 
 
 <h1>Mobile Screen</h1>
-<img align="center" src="https://user-images.githubusercontent.com/57854391/192273518-91ab7b9b-fcdd-4d3d-b307-f093ae15e6b3.png">
+<img align="center" src="https://user-images.githubusercontent.com/57854391/192366001-454c70c0-31e8-4d84-9ddb-1c16dc0a83eb.png">
