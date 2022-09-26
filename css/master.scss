@@ -248,7 +248,10 @@ a {
     align-items: center;
 
 }
-
+//  .wrapper>div{
+//     height: 329px !important;
+//     overflow: hidden;
+//  }
 @media screen and (max-width:767px) {
     .wrapper {
         grid-template-columns: minmax(100%, 1fr);
@@ -365,6 +368,7 @@ a {
 }
 /**quick-draf */
 .quick-draft{
+
     form input{
         border: 1px solid #eee;
         transition: 0.5s all;
@@ -372,8 +376,7 @@ a {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.089);
         }
     }
-    form textarea{
-        border-radius: 10px;
+    form textarea{ 
         border: 1px solid #eee; 
         resize: none;
         &:focus{
@@ -399,12 +402,12 @@ a {
 }
 
 /**Strat Yearly Targets */
- .targets{
+ .targets{ 
     padding-bottom: 0px !important;
  }
 .targets .target-row .icon{
-    width: 80px;
-    height: 74px;
+    width: 70px;
+    height: 60px;
     margin-right: 15px;
 }
 .targets .details{
@@ -462,10 +465,10 @@ a {
 }
 .green .icon , .green .progress{
     background-color: rgba($color: $green-color, $alpha: 0.2);
-}
-
- 
+}  
 /**end Yearly Targets */
+
+
 @mixin flex-center{
     display: flex;
     justify-content: center;
@@ -475,6 +478,7 @@ a {
     @include flex-center();
     flex-direction: column;  
     width: calc(50% - 10px);
+    height: 130px !important;
     @media (max-width:767px) {
         width: 100%;
     }

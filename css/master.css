@@ -320,7 +320,6 @@ a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.089);
 }
 .quick-draft form textarea {
-  border-radius: 10px;
   border: 1px solid #eee;
   resize: none;
 }
@@ -347,8 +346,8 @@ a {
 }
 
 .targets .target-row .icon {
-  width: 80px;
-  height: 74px;
+  width: 70px;
+  height: 60px;
   margin-right: 15px;
 }
 
@@ -424,6 +423,7 @@ a {
   align-items: center;
   flex-direction: column;
   width: calc(50% - 10px);
+  height: 130px !important;
 }
 @media (max-width: 767px) {
   .tickets .box {
