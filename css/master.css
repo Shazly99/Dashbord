@@ -138,17 +138,14 @@ a {
 .content .head .search input:focus::-moz-placeholder {
   opacity: 0;
   padding-left: 40px;
-  color: red;
 }
 .content .head .search input:focus:-ms-input-placeholder {
   opacity: 0;
   padding-left: 40px;
-  color: red;
 }
 .content .head .search input:focus::placeholder {
   opacity: 0;
   padding-left: 40px;
-  color: red;
 }
 .content .head .search .icon {
   position: absolute;
@@ -404,15 +401,18 @@ a {
   border-top-color: #22c55e;
 }
 
-.blue .icon, .blue .progress {
+.blue .icon,
+.blue .progress {
   background-color: rgba(0, 117, 255, 0.2);
 }
 
-.orange .icon, .orange .progress {
+.orange .icon,
+.orange .progress {
   background-color: rgba(245, 158, 11, 0.2);
 }
 
-.green .icon, .green .progress {
+.green .icon,
+.green .progress {
   background-color: rgba(34, 197, 94, 0.2);
 }
 
@@ -429,4 +429,83 @@ a {
   .tickets .box {
     width: 100%;
   }
+}
+/**Start lastest-news */
+.lastest-news {
+  flex-direction: column;
+}
+.lastest-news .news-row:not(:last-of-type) {
+  margin-bottom: 13.5px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 13.5px;
+}
+@media (max-width: 500px) {
+  .lastest-news .news-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+}
+.lastest-news .news-row img {
+  width: 100px;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+@media (max-width: 500px) {
+  .lastest-news .news-row img {
+    width: 150px;
+  }
+}
+.lastest-news .news-row > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.lastest-news .news-row .body {
+  flex-direction: row;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .lastest-news .news-row .body {
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.lastest-news .news-row .info h3 {
+  width: 100%;
+  margin-top: -5px !important;
+  font-size: 0.8rem;
+}
+@media (max-width: 500px) {
+  .lastest-news .news-row .info h3 {
+    margin-top: 0px !important;
+    width: 100% !important;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+.lastest-news .news-row .info p {
+  margin-top: -0.1rem;
+  font-size: 0.7rem;
+}
+@media (max-width: 500px) {
+  .lastest-news .news-row .info p {
+    margin-top: 0px !important;
+    margin-bottom: 20px;
+    width: 100% !important;
+    text-align: center;
+    font-size: 13px;
+  }
+}
+
+.lastest-tasks .task-row:not(:last-of-type) {
+  margin-bottom: 13.5px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 13.5px;
 }/*# sourceMappingURL=master.css.map */

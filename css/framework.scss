@@ -102,7 +102,6 @@ $grey-color: #888;
 }
 
 .flex-column {
-
     background-color: red;
 }
 
@@ -214,7 +213,18 @@ $grey-color: #888;
 .pt-20 {
     padding-top: 20px;
 }
-
+.pt-10{
+    padding-top: 10px;
+}
+.pt-12{
+    padding-top: 12px;
+}
+.pt-15{
+    padding-top: 15px;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
 .pb-20 {
     padding-bottom: 20px;
 }
@@ -263,7 +273,17 @@ $grey-color: #888;
 .w-fit {
     width: fit-content;
 }
+.fs-10{
+    font-size: 10px;
+}
+.fs-12{
 
+    font-size: 12px;
+}
+.fs-13{
+
+    font-size: 13px;
+}
 .fs-14 {
     font-size: 14px;
 }
@@ -314,6 +334,26 @@ $grey-color: #888;
 .shadow-1-c-ddd{
     box-shadow: 0 0 5px #ddd;
 }
+h2{
+    margin: 0;
+    margin-top: -0.5rem !important;
+    font-size: 1.2rem !important; 
+}
+.opacity-3  {
+    opacity: 0.3;
+}
+.txt-deco {
+    text-decoration: line-through;
+    text-decoration-thickness: 1.5px;
+    user-select: none;
+}
+.pointer{
+    cursor: pointer;
+}
+.not-allow{
+    cursor: not-allowed;
+}
+
 /* Component*/
 
 .flex-center {
@@ -333,6 +373,7 @@ $grey-color: #888;
 .btn{
     padding: 4px 10px ;
     border-radius: 6px;
+    user-select: none;
     &:hover{
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.19);
     }
