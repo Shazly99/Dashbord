@@ -32,7 +32,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
     background-color: $blue-color;
- 
+
 
     &:hover {
         background-color: $blue-alt-color;
@@ -164,7 +164,7 @@ a {
                     &::placeholder {
                         opacity: 0;
                         padding-left: 40px;
-                         
+
                     }
                 }
             }
@@ -525,19 +525,21 @@ a {
 
     .news-row {
         @media (max-width:500px) {
-            display: flex ;
+            display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center; 
+            align-items: center;
             width: 100%;
             margin: auto;
         }
+
         img {
 
             width: 100px;
             border-radius: 6px;
             margin-right: 15px;
-            @media (max-width:500px) { 
+
+            @media (max-width:500px) {
                 width: 150px;
             }
         }
@@ -548,34 +550,40 @@ a {
             justify-content: space-between;
             align-items: center;
         }
-        .body{
-             flex-direction: row;
+
+        .body {
+            flex-direction: row;
             width: 100%;
+
             @media (max-width:500px) {
                 flex-direction: column;
-                 padding: 20px;
+                padding: 20px;
                 justify-content: center;
                 align-items: center;
             }
         }
+
         .info {
-            
+
             h3 {
-                width: 100%; 
-                 margin-top:-5px !important;
+                width: 100%;
+                margin-top: -5px !important;
                 font-size: 0.8rem;
+
                 @media (max-width:500px) {
-                    margin-top:0px !important;
+                    margin-top: 0px !important;
                     width: 100% !important;
                     text-align: center;
-                    font-size: 15px ;
+                    font-size: 15px;
                 }
             }
+
             p {
-                margin-top: -0.1rem; 
+                margin-top: -0.1rem;
                 font-size: 0.7rem;
+
                 @media (max-width:500px) {
-                    margin-top:0px !important;
+                    margin-top: 0px !important;
                     margin-bottom: 20px;
                     width: 100% !important;
                     text-align: center;
@@ -586,19 +594,18 @@ a {
     }
 
 }
-.lastest-tasks{
-    .task-row:not(:last-of-type){
+
+.lastest-tasks {
+    .task-row:not(:last-of-type) {
         margin-bottom: 13.5px;
         border-bottom: 1px solid #eee;
         padding-bottom: 13.5px;
     }
 }
-.news-row:not(:last-of-type) {
 
+.news-row:not(:last-of-type) {}
 
-}
-
-.item{
+.item {
     display: flex;
     align-items: center;
     padding: 0rem 0.5rem;
@@ -611,107 +618,123 @@ a {
 
 /**latest_uploads */
 
-.latest_uploads{
+.latest_uploads {
 
-    .icon-section8{
+    .icon-section8 {
         width: 30px;
         height: 30px;
     }
-    .body{
+
+    .body {
         display: flex;
         width: 100%;
         justify-content: space-between;
-        align-items: center ;
-        .info{
-            h3{
+        align-items: center;
+
+        .info {
+            h3 {
                 font-size: 0.8rem !important;
                 font-weight: 600;
                 margin-left: 20px;
                 margin-bottom: 5px;
             }
-            p{
+
+            p {
                 font-size: 0.8rem !important;
-             
+
                 margin-left: 20px;
-                margin-bottom: 5px;  
+                margin-bottom: 5px;
             }
         }
     }
 }
-.latest_uploads:not(:last-of-type){
-     border-bottom: 1px solid #eee;
- }
 
- /**last-project */
- .last-project{
+.latest_uploads:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+
+/**last-project */
+.last-project {
     flex-direction: column;
-    ul{ 
+
+    ul {
         margin: 0;
         padding: 0;
-     &::before{
-        content: '';
-        position: absolute;
-        left: 11px;
-        height: 100%;
-        width: 2px;
-        background-color: $blue-color;
-     }  
-     li{
-        &::before{
+
+        &::before {
             content: '';
-            width: 20px;
-            height: 20px ;
-            display: block;
-            border-radius: 50%;
-            background-color: white;
-            border: 2px solid white;
-            outline:2px solid $blue-color;
-            margin-right: 15px;
-            z-index: 1;
+            position: absolute;
+            left: 11px;
+            height: 100%;
+            width: 2px;
+            background-color: $blue-color;
         }
- 
-     } 
+
+        li {
+            &::before {
+                content: '';
+                width: 20px;
+                height: 20px;
+                display: block;
+                border-radius: 50%;
+                background-color: white;
+                border: 2px solid white;
+                outline: 2px solid $blue-color;
+                margin-right: 15px;
+                z-index: 1;
+            }
+
+        }
     }
+
     .launch-icon {
         position: absolute;
         bottom: 0;
         right: 0;
         width: 140px !important;
     }
- }
- .last-project ul li.done {
-  }
-  .last-project ul li.done::before {
+}
+
+.last-project ul li.done {}
+
+.last-project ul li.done::before {
     content: "";
     background-color: #0075ff;
-  }
-  .last-project ul li.current::before {
+}
+
+.last-project ul li.current::before {
 
     content: "";
     animation: change-color 0.8s infinite alternate;
-  }/*# sourceMappingURL=master.css.map */
+}
+
+/*# sourceMappingURL=master.css.map */
 /**start reminder */
 .reminder ul li {
-    .key{
+    .key {
         width: 15px;
         height: 15px;
     }
-    >.blue{
+
+    >.blue {
         margin-left: 15px;
         padding-left: 10px;
         border-left: 2px solid $blue-color;
     }
-    >.orange{
+
+    >.orange {
         margin-left: 15px;
         padding-left: 10px;
         border-left: 2px solid $orange-color;
     }
-    >.green{
+
+    >.green {
         margin-left: 15px;
         padding-left: 10px;
         border-left: 2px solid $green-color;
     }
-    >.red{
+
+    >.red {
         margin-left: 15px;
         padding-left: 10px;
         border-left: 2px solid $red-color;
@@ -721,39 +744,45 @@ a {
 /**End reminder */
 
 /**start lasted-post */
-.lasted-post{
-    .top{
+.lasted-post {
+    .top {
         justify-content: start !important;
     }
-    .avatar{
+
+    .avatar {
         width: 48px;
         height: 48px;
         border: 5px solid white;
         border-radius: 50%;
         box-shadow: 0 0 5px #ddd;
     }
-    .post-content{
+
+    .post-content {
         text-transform: capitalize;
         line-height: 1.8;
         border-top: 1px solid #EEE;
         border-bottom: 1px solid #EEE;
-         min-height: 135px;
-        p{
-           font-size: 0.8rem;
-           color: $grey-color;
+        min-height: 135px;
+
+        p {
+            font-size: 0.8rem;
+            color: $grey-color;
         }
     }
+
     @media (max-width:767px) {
-        .header{
-         @include flex-center();
-            flex-direction:column !important;
-            .info{
-                >span{
+        .header {
+            @include flex-center();
+            flex-direction: column !important;
+
+            .info {
+                >span {
                     display: block;
                     width: 100%;
-                    text-align: center; 
+                    text-align: center;
                 }
-                .h1{
+
+                .h1 {
                     @media (max-width:767px) {
                         margin-top: 15px;
                     }
@@ -762,27 +791,32 @@ a {
         }
     }
 }
+
 /**end lasted-post */
 /**start lasted-social  */
-.lasted-social{
+.lasted-social {
     min-height: 330px !important;
-    .content{
-        .icon{
-            color: white; 
+
+    .content {
+        .icon {
+            color: white;
             width: 50px;
             height: 50px;
             display: flex;
             align-items: center;
             justify-content: center;
-            
+
         }
-        .info{ 
+
+        .info {
             padding: 10px;
-            span{
-                font-weight: 400; 
+
+            span {
+                font-weight: 400;
                 font-size: 14px;
             }
-            .btn{
+
+            .btn {
                 color: white;
                 font-size: 12px;
                 font-weight: 400;
@@ -791,16 +825,81 @@ a {
         }
     }
 }
+
 /**End lasted-social  */
-  /**start animation  */  
-  @keyframes change-color{
-    from{
+/***start project  */
+.projects {
+    .responsive-table {
+        overflow-x: auto;
+
+        table {
+            min-width: 1000px;
+            border-spacing: 0;
+            border-radius: 5px !important;
+            overflow: hidden;
+            thead {
+                tr {
+                    background-color: #eee;
+                    font-weight: bold;
+                }
+
+            }
+
+            td {
+                padding: 15px;
+                transition: 0.3s all;
+            }
+
+            tbody {
+                td {
+                    border-bottom: 1px solid #EEE;
+                    border-left: 1px solid #EEE;
+
+                }
+
+                td:last-child {
+                    border-right: 1px solid #EEE;
+                }
+
+                tr:hover td {
+                    background-color: #FAF7F7;
+
+                }
+            }
+
+            img {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                padding: 2px;
+                background-color: white;
+
+                :not(:first-child) {
+                    margin-left: -20px;
+                }
+            }
+
+            img:not(:first-child) {
+                margin-left: -20px;
+            }
+        }
+        td{
+            text-align: center !important;
+        }
+    }
+
+}
+
+/**End Project */
+/**start animation  */
+@keyframes change-color {
+    from {
         background-color: #0075ff;
     }
-    to{
+
+    to {
         background-color: white;
     }
-  }
-  
-  /**end animation  */
+}
 
+/**end animation  */

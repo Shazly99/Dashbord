@@ -469,6 +469,7 @@ h2 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  cursor: pointer;
 }
 .btn:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.19);

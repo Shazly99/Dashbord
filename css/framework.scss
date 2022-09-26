@@ -46,6 +46,7 @@ $linkedin-color:#0A66C2;
 }
 .bg-red{
     background-color: $red-color;
+    
 }
 .bg-w {
     background-color: $bg-light;
@@ -428,6 +429,7 @@ h2{
     padding: 4px 10px ;
     border-radius: 6px;
     user-select: none;
+    cursor: pointer;
     &:hover{
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.19);
     }

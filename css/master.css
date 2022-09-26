@@ -596,7 +596,9 @@ a {
   content: "";
   -webkit-animation: change-color 0.8s infinite alternate;
           animation: change-color 0.8s infinite alternate;
-} /*# sourceMappingURL=master.css.map */
+}
+
+/*# sourceMappingURL=master.css.map */
 /**start reminder */
 .reminder ul li .key {
   width: 15px;
@@ -693,6 +695,52 @@ a {
 }
 
 /**End lasted-social  */
+/***start project  */
+.projects .responsive-table {
+  overflow-x: auto;
+}
+.projects .responsive-table table {
+  min-width: 1000px;
+  border-spacing: 0;
+  border-radius: 5px !important;
+  overflow: hidden;
+}
+.projects .responsive-table table thead tr {
+  background-color: #eee;
+  font-weight: bold;
+}
+.projects .responsive-table table td {
+  padding: 15px;
+  transition: 0.3s all;
+}
+.projects .responsive-table table tbody td {
+  border-bottom: 1px solid #EEE;
+  border-left: 1px solid #EEE;
+}
+.projects .responsive-table table tbody td:last-child {
+  border-right: 1px solid #EEE;
+}
+.projects .responsive-table table tbody tr:hover td {
+  background-color: #FAF7F7;
+}
+.projects .responsive-table table img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+}
+.projects .responsive-table table img :not(:first-child) {
+  margin-left: -20px;
+}
+.projects .responsive-table table img:not(:first-child) {
+  margin-left: -20px;
+}
+.projects .responsive-table td {
+  text-align: center !important;
+}
+
+/**End Project */
 /**start animation  */
 @-webkit-keyframes change-color {
   from {
