@@ -8,7 +8,7 @@ $orange-color: #f59e0b;
 $green-color: #22c55e;
 $red-color: #f44336;
 $grey-color: #888;
-
+$grey2-color: #ededec;
 .bg-eee {
     background-color: rgba(238, 238, 238, 0.838);
 }
@@ -51,8 +51,8 @@ $grey-color: #888;
 .c-gray {
     color: $grey-color;
 }
-.bg-gray {
-    color: $green-color;
+.bg-gray2{
+    background-color: $grey2-color;
 }
 
 .bg-blue {

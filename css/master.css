@@ -508,4 +508,47 @@ a {
   margin-bottom: 13.5px;
   border-bottom: 1px solid #eee;
   padding-bottom: 13.5px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 0rem 0.5rem;
+  border-radius: 0.2rem;
+  font-size: 0.65rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 1.3rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/**latest_uploads */
+.latest_uploads .icon-section8 {
+  width: 30px;
+  height: 30px;
+}
+.latest_uploads .body {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.latest_uploads .body .info h3 {
+  font-size: 0.8rem !important;
+  font-weight: 600;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.latest_uploads .body .info p {
+  font-size: 0.8rem !important;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.latest_uploads:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
 }/*# sourceMappingURL=master.css.map */
