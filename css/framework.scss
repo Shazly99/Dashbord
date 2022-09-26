@@ -9,15 +9,40 @@ $green-color: #22c55e;
 $red-color: #f44336;
 $grey-color: #888;
 $grey2-color: #ededec;
+$linkedin-color:#0A66C2;
+
 .bg-eee {
     background-color: rgba(238, 238, 238, 0.838);
 }
-
+.bg-twitter{
+    background-color: #1DA1F2;
+}
+.bg-twitter-O-3{
+    background-color:rgba($color:  #1DA1F2, $alpha: 0.3);        
+}
+.bg-facebook-O-3{
+    background-color:rgba($color: $blue-color, $alpha: 0.3);        
+}
+.bg-youtube-O-3{
+    background-color:rgba($color: red, $alpha: 0.3);        
+}
+.c-linkedin {
+    color: $linkedin-color;     
+}
+.bg-linkedin {
+    background-color: $linkedin-color;     
+}
+.bg-linkedin-O-3{
+    background-color:rgba($color: $linkedin-color, $alpha: 0.3);        
+}
 .c-eee {
     color: $bg-eee;
 } 
 .c-red{
     color: $red-color;
+}
+.c-r{
+    color: red;
 }
 .bg-red{
     background-color: $red-color;
@@ -82,27 +107,24 @@ $grey2-color: #ededec;
 }
 
 .align-center {
-    display: flex;
     align-items: center;
 }
 
 .justify-center {
-    display: flex;
     justify-content: center;
 }
 
 .flex-between {
-    display: flex;
     justify-content: space-between;
 }
 
 .flex-row {
-    display: flex !important;
+    
     flex-direction: row !important;
 }
 
 .flex-column {
-    background-color: red;
+    flex-direction: column;
 }
 
 .d-grid {
@@ -126,7 +148,9 @@ $grey2-color: #ededec;
 .m-0 {
     margin: 0;
 }
-
+.w-100{
+    width: 100% !important;
+}
 .mt-5 {
     margin-top: 5px;
 }
@@ -148,9 +172,15 @@ $grey2-color: #ededec;
 .mr-10 {
     margin-right: 10px;
 }
+.mr-15 {
+    margin-right: 15px;
+}
 
 .ml-10 {
     margin-left: 10px;
+}
+.ml-15 {
+    margin-left: 15px;
 }
 
 .mx-10 {
@@ -192,7 +222,21 @@ $grey2-color: #ededec;
 .mt-0 {
     margin-top: 0;
 }
-
+.mt-25{
+    margin-top: 25px;
+}
+.mb-25{
+    margin-bottom: 25px;
+}
+.ml-25{
+    margin-left: 25px;
+}
+.mr-25{
+    margin-right: 25px;
+}
+.m-25{
+    margin: 25px;
+}
 // Padding
 .p-0 {
     padding: 0;
@@ -201,9 +245,14 @@ $grey2-color: #ededec;
 .p-10 {
     padding: 10px 10px 10px 10px;
 }
-
+.pb-25{
+    padding-bottom: 25px;
+}
 .p-15 {
     padding: 15px;
+}
+.pl-15 {
+    padding-left: 15px;
 }
 
 .p-20 {
@@ -299,6 +348,8 @@ $grey2-color: #ededec;
 // ul
 .list-none {
     list-style: none;
+    list-style-type: none;
+ 
 }
 
 // Border
@@ -320,6 +371,9 @@ $grey2-color: #ededec;
 }
 .red-15{
     border-radius: 15px;
+}
+.red-circle{
+    border-radius: 50%;
 }
 .b-none{
     border: none;

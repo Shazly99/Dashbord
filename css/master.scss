@@ -32,7 +32,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
     background-color: $blue-color;
-    border-radius: 150px;
+ 
 
     &:hover {
         background-color: $blue-alt-color;
@@ -641,3 +641,165 @@ a {
 .latest_uploads:not(:last-of-type){
      border-bottom: 1px solid #eee;
  }
+
+ /**last-project */
+ .last-project{
+    flex-direction: column;
+    ul{ 
+        margin: 0;
+        padding: 0;
+     &::before{
+        content: '';
+        position: absolute;
+        left: 11px;
+        height: 100%;
+        width: 2px;
+        background-color: $blue-color;
+     }  
+     li{
+        &::before{
+            content: '';
+            width: 20px;
+            height: 20px ;
+            display: block;
+            border-radius: 50%;
+            background-color: white;
+            border: 2px solid white;
+            outline:2px solid $blue-color;
+            margin-right: 15px;
+            z-index: 1;
+        }
+ 
+     } 
+    }
+    .launch-icon {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 140px !important;
+    }
+ }
+ .last-project ul li.done {
+  }
+  .last-project ul li.done::before {
+    content: "";
+    background-color: #0075ff;
+  }
+  .last-project ul li.current::before {
+
+    content: "";
+    animation: change-color 0.8s infinite alternate;
+  }/*# sourceMappingURL=master.css.map */
+/**start reminder */
+.reminder ul li {
+    .key{
+        width: 15px;
+        height: 15px;
+    }
+    >.blue{
+        margin-left: 15px;
+        padding-left: 10px;
+        border-left: 2px solid $blue-color;
+    }
+    >.orange{
+        margin-left: 15px;
+        padding-left: 10px;
+        border-left: 2px solid $orange-color;
+    }
+    >.green{
+        margin-left: 15px;
+        padding-left: 10px;
+        border-left: 2px solid $green-color;
+    }
+    >.red{
+        margin-left: 15px;
+        padding-left: 10px;
+        border-left: 2px solid $red-color;
+    }
+}
+
+/**End reminder */
+
+/**start lasted-post */
+.lasted-post{
+    .top{
+        justify-content: start !important;
+    }
+    .avatar{
+        width: 48px;
+        height: 48px;
+        border: 5px solid white;
+        border-radius: 50%;
+        box-shadow: 0 0 5px #ddd;
+    }
+    .post-content{
+        text-transform: capitalize;
+        line-height: 1.8;
+        border-top: 1px solid #EEE;
+        border-bottom: 1px solid #EEE;
+         min-height: 135px;
+        p{
+           font-size: 0.8rem;
+           color: $grey-color;
+        }
+    }
+    @media (max-width:767px) {
+        .header{
+         @include flex-center();
+            flex-direction:column !important;
+            .info{
+                >span{
+                    display: block;
+                    width: 100%;
+                    text-align: center; 
+                }
+                .h1{
+                    @media (max-width:767px) {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+/**end lasted-post */
+/**start lasted-social  */
+.lasted-social{
+    min-height: 330px !important;
+    .content{
+        .icon{
+            color: white; 
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .info{ 
+            padding: 10px;
+            span{
+                font-weight: 400; 
+                font-size: 14px;
+            }
+            .btn{
+                color: white;
+                font-size: 12px;
+                font-weight: 400;
+                cursor: pointer;
+            }
+        }
+    }
+}
+/**End lasted-social  */
+  /**start animation  */  
+  @keyframes change-color{
+    from{
+        background-color: #0075ff;
+    }
+    to{
+        background-color: white;
+    }
+  }
+  
+  /**end animation  */
+

@@ -25,7 +25,6 @@ a {
 
 ::-webkit-scrollbar-thumb {
   background-color: #0075ff;
-  border-radius: 150px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: #0d69d5;
@@ -551,4 +550,164 @@ a {
 
 .latest_uploads:not(:last-of-type) {
   border-bottom: 1px solid #eee;
-}/*# sourceMappingURL=master.css.map */
+}
+
+/**last-project */
+.last-project {
+  flex-direction: column;
+}
+.last-project ul {
+  margin: 0;
+  padding: 0;
+}
+.last-project ul::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  height: 100%;
+  width: 2px;
+  background-color: #0075ff;
+}
+.last-project ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid white;
+  outline: 2px solid #0075ff;
+  margin-right: 15px;
+  z-index: 1;
+}
+.last-project .launch-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 140px !important;
+}
+
+.last-project ul li.done::before {
+  content: "";
+  background-color: #0075ff;
+}
+
+.last-project ul li.current::before {
+  content: "";
+  -webkit-animation: change-color 0.8s infinite alternate;
+          animation: change-color 0.8s infinite alternate;
+} /*# sourceMappingURL=master.css.map */
+/**start reminder */
+.reminder ul li .key {
+  width: 15px;
+  height: 15px;
+}
+.reminder ul li > .blue {
+  margin-left: 15px;
+  padding-left: 10px;
+  border-left: 2px solid #0075ff;
+}
+.reminder ul li > .orange {
+  margin-left: 15px;
+  padding-left: 10px;
+  border-left: 2px solid #f59e0b;
+}
+.reminder ul li > .green {
+  margin-left: 15px;
+  padding-left: 10px;
+  border-left: 2px solid #22c55e;
+}
+.reminder ul li > .red {
+  margin-left: 15px;
+  padding-left: 10px;
+  border-left: 2px solid #f44336;
+}
+
+/**End reminder */
+/**start lasted-post */
+.lasted-post .top {
+  justify-content: start !important;
+}
+.lasted-post .avatar {
+  width: 48px;
+  height: 48px;
+  border: 5px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #ddd;
+}
+.lasted-post .post-content {
+  text-transform: capitalize;
+  line-height: 1.8;
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+  min-height: 135px;
+}
+.lasted-post .post-content p {
+  font-size: 0.8rem;
+  color: #888;
+}
+@media (max-width: 767px) {
+  .lasted-post .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+  }
+  .lasted-post .header .info > span {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) and (max-width: 767px) {
+  .lasted-post .header .info .h1 {
+    margin-top: 15px;
+  }
+}
+
+/**end lasted-post */
+/**start lasted-social  */
+.lasted-social {
+  min-height: 330px !important;
+}
+.lasted-social .content .icon {
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lasted-social .content .info {
+  padding: 10px;
+}
+.lasted-social .content .info span {
+  font-weight: 400;
+  font-size: 14px;
+}
+.lasted-social .content .info .btn {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/**End lasted-social  */
+/**start animation  */
+@-webkit-keyframes change-color {
+  from {
+    background-color: #0075ff;
+  }
+  to {
+    background-color: white;
+  }
+}
+@keyframes change-color {
+  from {
+    background-color: #0075ff;
+  }
+  to {
+    background-color: white;
+  }
+}
+/**end animation  *//*# sourceMappingURL=master.css.map */
