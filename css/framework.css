@@ -138,6 +138,10 @@
   gap: 20px;
 }
 
+.gap-10 {
+  gap: 10px;
+}
+
 .d-block {
   display: block;
 }
@@ -148,6 +152,14 @@
 
 .m-0 {
   margin: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
 }
 
 .w-100 {
@@ -186,6 +198,10 @@
   margin-left: 10px;
 }
 
+.ml-5 {
+  margin-left: 5px;
+}
+
 .ml-15 {
   margin-left: 15px;
 }
@@ -208,6 +224,10 @@
 
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
 }
 
 .mr-20 {
@@ -268,6 +288,14 @@
 
 .pl-15 {
   padding-left: 15px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.pl-0 {
+  padding-left: 0px;
 }
 
 .p-20 {
@@ -469,6 +497,8 @@ h2 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  outline: none;
+  border-color: transparent;
   cursor: pointer;
 }
 .btn:hover {

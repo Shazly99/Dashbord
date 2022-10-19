@@ -121,7 +121,7 @@ a {
   height: 2rem;
   width: 200px;
   transition-duration: 0.5s;
-  box-shadow: 0 0 5px #F1F5F9;
+  box-shadow: 0 0 5px #f1f5f9;
 }
 .content .head .search input:focus {
   width: 500px;
@@ -152,7 +152,9 @@ a {
   margin-bottom: 6px;
 }
 .content .head .icons .notification {
-  font-size: 18px;
+  width: 17px !important;
+  height: 20px !important;
+  cursor: pointer;
 }
 .content .head .icons .notification::before {
   content: "";
@@ -161,8 +163,8 @@ a {
   height: 10px;
   background-color: #f44336;
   border-radius: 50%;
-  right: -3px;
-  top: -3px;
+  right: -5px;
+  top: -5px;
 }
 .content .head .icons img {
   width: 32px;
@@ -640,8 +642,8 @@ a {
 .lasted-post .post-content {
   text-transform: capitalize;
   line-height: 1.8;
-  border-top: 1px solid #EEE;
-  border-bottom: 1px solid #EEE;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   min-height: 135px;
 }
 .lasted-post .post-content p {
@@ -714,14 +716,14 @@ a {
   transition: 0.3s all;
 }
 .projects .responsive-table table tbody td {
-  border-bottom: 1px solid #EEE;
-  border-left: 1px solid #EEE;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
 }
 .projects .responsive-table table tbody td:last-child {
-  border-right: 1px solid #EEE;
+  border-right: 1px solid #eee;
 }
 .projects .responsive-table table tbody tr:hover td {
-  background-color: #FAF7F7;
+  background-color: #faf7f7;
 }
 .projects .responsive-table table img {
   width: 32px;
@@ -758,4 +760,374 @@ a {
     background-color: white;
   }
 }
-/**end animation  *//*# sourceMappingURL=master.css.map */
+/**end animation  */
+/**Sitting Page */
+.toggle-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+.toggle-switch {
+  background-color: #ccc;
+  border-radius: 16px;
+  width: 78px;
+  height: 32px;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.fa-xmark,
+.fa-check {
+  font-weight: 900;
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  transition: all 0.3s;
+}
+
+.fa-xmark {
+  top: 4px;
+  left: 4px;
+}
+
+.fa-check {
+  top: 4px;
+  left: 50px;
+  display: none !important;
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: #0075ff;
+}
+.toggle-checkbox:checked + .toggle-switch .fa-xmark {
+  left: 50px !important;
+  transition: all 0.3s;
+  color: #0075ff !important;
+}
+.toggle-checkbox:checked + .toggle-switch .fa-check {
+  left: 50px !important;
+  transition: all 0.3s;
+  color: #0075ff !important;
+  display: flex !important;
+}
+
+.settings-page {
+  grid-template-columns: repeat(3, 1fr);
+}
+.settings-page .close-mess {
+  border: 1px solid #ccc;
+  resize: none;
+  min-height: 150px;
+}
+
+@media (max-width: 1200px) {
+  .settings-page {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+@media (max-width: 951px) {
+  .settings-page {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+.label1 input {
+  border: 1px solid #aaa;
+  width: 100%;
+  outline: none;
+  transition: all 0.6s;
+}
+.label1 input:hover {
+  box-shadow: 0 0 10px #ddd;
+  border: #eee;
+}
+.label1 .email__input {
+  cursor: no-drop;
+  background-color: #eee;
+}
+.label1 .email__input:hover {
+  box-shadow: 0 0 0 #888 !important;
+}
+.label1 .btn__email {
+  background-color: transparent;
+  padding: 15px;
+  color: #0075ff;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+.label1 .btn__email:hover {
+  background-color: rgba(0, 117, 255, 0.2);
+  border-radius: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.password,
+.device {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.password .pass__left,
+.device .pass__left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px !important;
+}
+.password .pass__left span,
+.device .pass__left span {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+.password .pass__left p,
+.device .pass__left p {
+  margin: 0;
+  padding: 0;
+  color: #888;
+}
+.password .pass__right .btn,
+.device .pass__right .btn {
+  outline: none;
+  border: none;
+  color: white;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.auth {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center !important;
+}
+.auth .auth__left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px !important;
+}
+.auth .auth__left span {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+.auth .auth__left p {
+  margin: 0;
+  padding: 0;
+  color: #888;
+}
+.device .pass__right .btn {
+  color: black;
+  box-shadow: none !important;
+}
+.device .pass__right .btn:hover {
+  box-shadow: 0 0 10px #ddd;
+}
+
+.auth .auth__left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.auth .auth__left p {
+  font-size: 15px;
+}
+
+.search-items3 .body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-items3 .body > div:not(:last-child) {
+  padding: 10px;
+  border-bottom: 2px solid #eee;
+}
+
+.device,
+.password {
+  padding: 15px 0;
+}
+
+.password {
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+  padding-left: 0 !important;
+}
+
+.device {
+  padding-left: px;
+  padding-right: 10px;
+}
+
+.auth {
+  padding: 0 !important;
+  margin: 0;
+}
+
+.social__boxes .box i {
+  width: 40px;
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__boxes .box input {
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  border-radius: 0 6px 6px 0;
+}
+
+.social__boxes > div:focus-within .fa-twitter {
+  color: #0075ff;
+}
+
+.social__boxes > div:focus-within .fa-facebook {
+  color: #0075ff;
+}
+
+.social__boxes > div:focus-within .fa-instagram {
+  color: #f44336;
+}
+
+.social__boxes > div:focus-within .fa-youtube {
+  color: red;
+}
+
+.widgets-control .control label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.widgets-control .control label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  border: 2px solid gray;
+  border-radius: 3px;
+  margin-top: -9px;
+}
+
+.widgets-control .control label:hover::before {
+  border: 2px solid #0075ff;
+}
+
+.widgets-control .control {
+  position: relative;
+}
+.widgets-control .control input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.widgets-control .control .check__icon {
+  font-weight: 900;
+  background-color: var(--blue-color);
+  color: #0075ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 19px;
+  left: 8px;
+  top: 50%;
+  margin-top: -9px;
+  transform: scale(0) rotate(360deg);
+  transition: 0.3s;
+}
+.widgets-control .control input[type=checkbox]:checked ~ .check__icon {
+  transform: scale(1);
+}
+
+.backup__Manager .control label {
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+}
+.backup__Manager .control label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -11px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #888;
+  border-radius: 50%;
+}
+.backup__Manager .control label::after {
+  content: "";
+  position: absolute;
+  background-color: #0075ff;
+  width: 11px;
+  height: 11px;
+  left: 5.5px;
+  top: 5.5px;
+  border-radius: 50%;
+  transition: 0.3s;
+  transform: scale(0);
+}
+.backup__Manager .control input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.backup__Manager .control input[type=radio]:checked + label::before {
+  border-color: #0075ff;
+}
+.backup__Manager .control input[type=radio]:checked + label::after {
+  transform: scale(1);
+}
+.backup__Manager .servers {
+  border-top: 1px solid #EEE;
+  padding-top: 20px;
+  height: 50%;
+}
+.backup__Manager .servers .server {
+  padding: 15px 0;
+  border: 1px solid #ddd;
+}
+.backup__Manager .servers .server label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.backup__Manager .servers input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.backup__Manager .servers input[type=radio]:checked + .server {
+  border-color: #0075ff;
+  color: #0075ff;
+}
+@media (max-width: 767px) {
+  .backup__Manager .servers {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=master.css.map */

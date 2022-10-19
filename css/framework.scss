@@ -136,6 +136,10 @@ $linkedin-color:#0A66C2;
     gap: 20px;
 }
 
+.gap-10 {
+    gap: 10px;
+}
+
 .d-block {
     display: block;
 }
@@ -148,6 +152,12 @@ $linkedin-color:#0A66C2;
 // margin
 .m-0 {
     margin: 0;
+}
+.mb-0{
+    margin-bottom: 0 !important;
+}
+.mt-0{
+    margin-top: 0 !important;
 }
 .w-100{
     width: 100% !important;
@@ -180,6 +190,9 @@ $linkedin-color:#0A66C2;
 .ml-10 {
     margin-left: 10px;
 }
+.ml-5 {
+    margin-left: 5px;
+}
 .ml-15 {
     margin-left: 15px;
 }
@@ -202,6 +215,10 @@ $linkedin-color:#0A66C2;
 
 .mb-20 {
     margin-bottom: 20px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
 }
 
 .mr-20 {
@@ -255,7 +272,12 @@ $linkedin-color:#0A66C2;
 .pl-15 {
     padding-left: 15px;
 }
-
+.pl-5 {
+    padding-left: 5px;
+}
+.pl-0{
+    padding-left: 0px;
+}
 .p-20 {
     padding: 20px;
 }
@@ -350,9 +372,7 @@ $linkedin-color:#0A66C2;
 .list-none {
     list-style: none;
     list-style-type: none;
- 
 }
-
 // Border
 
 .red-5 {
@@ -429,6 +449,8 @@ h2{
     padding: 4px 10px ;
     border-radius: 6px;
     user-select: none;
+    outline: none;
+    border-color: transparent;
     cursor: pointer;
     &:hover{
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.19);
