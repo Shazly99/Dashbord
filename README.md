@@ -12,3 +12,11 @@
  Setting Page
 </h1>
 <img align="center" src="https://user-images.githubusercontent.com/57854391/196708219-6c7429e3-e806-4d77-bb35-827c8767746e.png">
+
+
+ <h1 align="center">
+ Profile Page
+</h1>
+<img align="center" src="https://user-images.githubusercontent.com/57854391/197065256-c3d93fe2-2b41-4027-99d4-5ece22f82a14.png">
+
+ 

@@ -1369,3 +1369,68 @@ a {
     margin: auto;
   }
 }
+
+.profile-page{
+  .other__date{
+    .skills-card{
+      width: 45%;
+      ul{
+        list-style: none;
+        padding: 0px !important; 
+        li{ 
+          padding: 20px 0;  
+        }
+        li>span{
+          background-color: #eee;
+          padding: 3px 10px;
+          border-radius: 6px;
+          margin-right: 15px;
+          font-weight: normal;
+          box-shadow: 0 0 10px #ddd;
+          border: 1px solid #ddd;
+          user-select: none;
+        }
+        li:not(:last-child){ 
+          border-bottom: 1px solid #f1f1ff;
+        }
+      }
+    }
+    .activites{
+      .box{
+        display: flex;
+        flex-direction: column;
+        // gap: 20px;
+        .box1{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;  
+          padding: 20px 0;
+        }
+        .box1:not(:last-child){
+          border-bottom: 1px solid #ddd;
+        }
+        .box__active{
+          display: flex;
+          gap: 10px;
+          .header{
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            gap: 10px;
+          }
+          img{
+            width: 64px;
+            height: 64px;
+          }
+        }
+        .box__time{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 10px;
+          direction: rtl;
+        }
+      }
+    }
+  }
+}

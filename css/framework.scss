@@ -468,3 +468,8 @@ h2{
         display: none;
     }
 }
+@media (max-width: 767px) {
+    .txt-c-mobile {
+        text-align: center;
+    }
+}

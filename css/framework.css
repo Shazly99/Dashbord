@@ -516,4 +516,9 @@ h2 {
   .sm-hide {
     display: none;
   }
+}
+@media (max-width: 767px) {
+  .txt-c-mobile {
+    text-align: center;
+  }
 }/*# sourceMappingURL=framework.css.map */

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="stylesheet" href="css/framework.css" />
+  <link rel="icon" href="Image/dashboard.png" />
+  <title>Dashbord</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/824a87a2e1.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="page d-flex">
+    <div class="slider bg-w p-relative">
+      <h3 class="p-relative txt-c">Admin</h3>
+      <ul class="list-none p-0">
+        <li>
+          <a class="d-flex align-center fs-14 red-6 p-10 c-black" href="index.html">
+            <i class="fa fa-chart-line fa-fw"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 red-6 p-10 c-black" href="settings.html">
+            <i class="fa fa-gear"></i>
+            <!-- <i class="fa-solid fa-thumbs-up fa-5x"></i> -->
+
+            <span>Setting</span>
+          </a>
+        </li>
+        <li>
+          <a class="active d-flex align-center fs-14 red-6 p-10 c-black" href="Profile.html">
+            <i class="fa-regular fa-user"></i> <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 red-6 p-10 c-black" href="index.html">
+            <i class="fa fa-diagram-project"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 red-6 p-10 c-black" href="index.html">
+            <i class="fa-solid fa-address-book"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 red-6 p-10 c-black" href="index.html">
+            <i class="fa-solid fa-user-group"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 red-6 p-10 c-black" href="index.html">
+            <i class="fa-regular fa-file"></i>
+            <span>Files</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 red-6 p-10 c-black" href="index.html">
+            <i class="fa fa-holly-berry"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="content w-full">
+      <div class="head bg-w p-15 flex-between">
+        <div class="search p-relative">
+          <!-- <i class="icon fa fa-search" aria-hidden="true"></i> -->
+          <input style="padding: 10px" type="text" placeholder="Type a keyword" />
+        </div>
+        <div class="icons d-flex align-center">
+          <span class="notification p-relative">
+            <i class="fa-regular fa-bell fa-lg"></i>
+          </span>
+          <img src="Image/avatar.png" alt="" />
+        </div>
+      </div>
+      <h1 class="p-relative">Profile</h1>
+      <div class="profile-page m-20 mt-25 d-grid gap-20">
+        <div class="overview bg-w red-10 d-flex align-center">
+          <div class="avatar_box">
+            <img class="mb-10 red-circle" src="Image/avatar.png" alt="" />
+            <h3 class="m-0 mb-10">Ahmed Elshazly</h3>
+            <span class="c-gray">Level 20</span>
+            <div class="level red-6 bg-eee p-relative">
+              <span style="width: 70%"></span>
+            </div>
+            <div class="rating mt-10">
+              <i class="fa fa-star c-yellow fs-13" aria-hidden="true"></i>
+              <i class="fa fa-star c-yellow fs-13" aria-hidden="true"></i>
+              <i class="fa fa-star c-yellow fs-13" aria-hidden="true"></i>
+              <i class="fa fa-star c-yellow fs-13" aria-hidden="true"></i>
+              <i class="fa fa-star c-yellow fs-13" aria-hidden="true"></i>
+            </div>
+            <p class="c-gray">550 Rating</p>
+          </div>
+
+          <div class="info_box w-full">
+            <div class="box p-20 align-center">
+              <h4 class="c-gray fs-15 m-0 w-full">General Information</h4>
+              <div class="content__box">
+                <div class="fs-14">
+                  <span class="c-gray">Full Name: </span>
+                  <span>Ahmed Elshazly</span>
+                </div>
+
+                <div class="fs-14">
+                  <span class="c-gray">Gender:</span>
+                  <span>Male</span>
+                </div>
+
+                <div class="fs-14">
+                  <span class="c-gray">Country:</span>
+                  <span>Egypt</span>
+                </div>
+                <br />
+                <div class="fs-14">
+                  <label>
+                    <input type="checkbox" class="toggle-checkbox" checked />
+                    <div class="toggle-switch">
+                      <i class="fa-solid fa-xmark"></i>
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="box p-20 align-center">
+              <h4 class="c-gray fs-15 m-0 w-full">Personal Information</h4>
+              <div class="content__box">
+                <div class="fs-14">
+                  <span class="c-gray">Email: </span>
+                  <span>shazly@gmail.com</span>
+                </div>
+
+                <div class="fs-14">
+                  <span class="c-gray">phone:</span>
+                  <span>01063034641</span>
+                </div>
+
+                <div class="fs-14">
+                  <span class="c-gray">Date Of Birth : </span>
+                  <span>9/9/2022</span>
+                </div>
+
+                <div class="fs-14">
+                  <label>
+                    <input type="checkbox" class="toggle-checkbox" checked />
+                    <div class="toggle-switch">
+                      <i class="fa-solid fa-xmark"></i>
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="box p-20 align-center">
+              <h4 class="c-gray fs-15 m-0 w-full">Billing Information</h4>
+              <div class="content__box">
+                <div class="fs-14">
+                  <span class="c-gray">Payment Method: </span>
+                  <span>Paypal</span>
+                </div>
+
+                <div class="fs-14">
+                  <span class="c-gray">Email:</span>
+                  <span> email@website.com</span>
+                </div>
+
+                <div class="fs-14">
+                  <span class="c-gray">Subscription:</span>
+                  <span>Monthly</span>
+                </div>
+
+                <div class="fs-14">
+                  <label>
+                    <input type="checkbox" class="toggle-checkbox" checked />
+                    <div class="toggle-switch">
+                      <i class="fa-solid fa-xmark"></i>
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="box p-20 align-center">
+              <h4 class="c-gray fs-15 m-0 w-full">Jop Information</h4>
+              <div class="content__box">
+                <div class="fs-14">
+                  <span class="c-gray">Title: </span>
+                  <span>Full Stack Developer</span>
+                </div>
+
+                <div class="fs-14">
+                  <span class="c-gray">Programming Language:</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="fs-14">
+                  <span class="c-gray">Years Of Experience:</span>
+                  <span>6+</span>
+                </div>
+
+                <div class="fs-14">
+                  <label>
+                    <input type="checkbox" class="toggle-checkbox" checked />
+                    <div class="toggle-switch">
+                      <i class="fa-solid fa-xmark"></i>
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="other__date d-flex gap-20">
+          <div class="skills-card  bg-w p-20 red-7">
+            <h2 class="mt-0 mb-10">My Skills</h2>
+            <p class="mt-0 mb-20 c-gray fs-15">Complete Skills List </p>
+            <ul class="m-0 txt-c-mobile">
+              <li><span>HTML</span><span>Pugjs</span><span>Bootstrap</span></li>
+              <li><span>CSS</span><span>SASS</span><span>Stylus</span></li>
+              <li><span>JavaScript</span><span>TypeScript</span></li>
+              <li><span>Angular</span><span>Reactjs</span><span>Next.Js</span></li>
+              <li><span>Jest</span><span>Jasmine</span></li>
+              <li><span>Node.Js</span><span>Express.Js</span></li>
+              <li><span>Python</span><span>Django</span></li>
+            </ul>
+          </div>
+          <div class="activites bg-w red-7 w-full p-20">
+            <h2 class="mt-0 mb-10">Latest Activities </h2>
+            <p class="mt-0 mb-20 c-gray fs-15">Latest Activities Done By The User</p>
+
+              <div class="box">
+                <div class="box1 " style="margin-top: -20px !important;">
+                  <div class="box__active">
+                    <img src="Image/activity-01.png" alt="">
+                    <div class="header">
+                      <span>Store</span>
+                      <span class="c-gray">Bought The Mastering Python Course</span>
+                    </div>
+                  </div>
+                  <div class="box__time">
+                    <span>18:10</span>
+                    <span class="c-gray">Yesterday</span>
+                  </div>
+                </div>
+
+                <div class="box1">
+                  <div class="box__active">
+                    <img src="Image/activity-02.png" alt="">
+                    <div class="header">
+                      <span>Academy</span>
+                      <span class="c-gray">Got The PHP Certificate</span>
+                    </div>
+                  </div>
+                  <div class="box__time">
+                    <span>16:05</span>
+                    <span class="c-gray">Yesterday</span>
+                  </div>
+                </div>
+
+                <div class="box1">
+                  <div class="box__active">
+                    <img src="Image/activity-03.png" alt="">
+                    <div class="header">
+                      <span>Badges</span>
+                      <span class="c-gray">Unlocked The 10 Skills Badge</span>
+                    </div>
+                  </div>
+                  <div class="box__time">
+                    <span>16:05</span>
+                    <span class="c-gray">Yesterday</span>
+                  </div>
+                </div>
+
+                <div class="box1" style="margin-bottom: -20px !important;">
+                  <div class="box__active">
+                    <img src="Image/activity-01.png" alt="">
+                    <div class="header">
+                      <span>Academy</span>
+                      <span class="c-gray">Got The PHP Certificate</span>
+                    </div>
+                  </div>
+                  <div class="box__time">
+                    <span>16:05</span>
+                    <span class="c-gray">Yesterday</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
