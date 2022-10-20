@@ -18,6 +18,10 @@
   background-color: rgba(255, 0, 0, 0.3);
 }
 
+.c-yellow {
+  color: yellow;
+}
+
 .c-linkedin {
   color: #0A66C2;
 }

@@ -10,7 +10,7 @@ $red-color: #f44336;
 $grey-color: #888;
 $grey2-color: #ededec;
 $linkedin-color:#0A66C2;
-
+$color-yellow:yellow;
 .bg-eee {
     background-color: rgba(238, 238, 238, 0.838);
 }
@@ -25,6 +25,9 @@ $linkedin-color:#0A66C2;
 }
 .bg-youtube-O-3{
     background-color:rgba($color: red, $alpha: 0.3);        
+}
+.c-yellow{
+    color:$color-yellow ;
 }
 .c-linkedin {
     color: $linkedin-color;     

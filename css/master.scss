@@ -1262,3 +1262,110 @@ a {
 }
 
 // server/*****************************End Page 2 Sitting*******************************/
+/*
+    page 3 Profile
+*/
+
+.profile-page{
+  margin-top: 40px !important;
+  .overview{
+    @media (max-width:767px) {
+      flex-direction: column;
+    }
+    .avatar_box{
+      padding: 20px;
+      text-align: center;
+      img{
+        width: 120px;
+        height: 120px;
+      }
+      width: 300px;
+      @media (min-width:768px) {
+        border-right: 1px solid #EEE;
+      }
+    }
+    .level{
+      height: 6px !important;
+      overflow: hidden;
+      width: 70%;
+      margin-top: 10px !important;
+      margin: auto;
+
+      span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $blue-color;
+        height: 100%;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+.profile-page{
+ 
+  }
+  .overview{
+    .info_box{
+      .box{
+        display: flex ;
+        flex-wrap: wrap !important;
+        border-bottom: 1px solid #EEE;
+        transition: 0.3s all;
+        width: 100% !important;
+        // gap: 10px;
+        label{
+          display: flex;
+          align-items: center;
+        }
+      }
+      
+      .box:hover{
+        background-color: #f9f9f9;
+      }
+      .box .content__box{
+        width: 100%;   
+        display: flex;
+        flex-direction: row; 
+        padding-top: 20px;
+        justify-content: space-between;   
+      }
+       
+      }
+    }
+  
+/* Start Training Code */
+.profile-page .info_box .toggle-switch {
+  height: 20px;
+  .fa-xmark {
+    top: 3px;
+    left: 7px;
+}
+}
+.profile-page .info_box .toggle-switch > i{
+  width: 14px;
+  height: 14px;
+}
+.profile-page{
+  .toggle-checkbox:checked + .toggle-switch .fa-xmark {
+    top: 3px;
+    left: 57px !important;
+    transition: all 0.3s;
+    color: transparent !important; 
+    background-color: transparent !important;
+  }
+  .toggle-checkbox:checked + .toggle-switch .fa-check {
+    left: 57px !important;
+    top: 2.5px !important;
+    transition: all 0.3s;
+    color: $blue-color !important;
+    display: flex !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-page .info_box .toggle-switch {
+    margin: auto;
+  }
+}
