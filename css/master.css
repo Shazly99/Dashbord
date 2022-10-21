@@ -1138,8 +1138,10 @@ a {
 .profile-page {
   margin-top: 40px !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 400px) {
   .profile-page .overview {
+    overflow: hidden;
+    width: 90%;
     flex-direction: column;
   }
 }
@@ -1180,6 +1182,9 @@ a {
   transition: 0.3s all;
   width: 100% !important;
 }
+.overview .info_box .box h4 {
+  text-align: center;
+}
 .overview .info_box .box label {
   display: flex;
   align-items: center;
@@ -1193,6 +1198,13 @@ a {
   flex-direction: row;
   padding-top: 20px;
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .overview .info_box .box .content__box {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
 }
 
 /* Start Training Code */
@@ -1228,6 +1240,10 @@ a {
   .profile-page .info_box .toggle-switch {
     margin: auto;
   }
+}
+.profile-page .other__date {
+  display: flex;
+  flex-direction: row;
 }
 .profile-page .other__date .skills-card {
   width: 45%;
@@ -1288,4 +1304,28 @@ a {
   justify-content: center;
   gap: 10px;
   direction: rtl;
+}
+
+@media (max-width: 767px) {
+  .profile-page .other__date {
+    display: flex;
+    flex-direction: column !important;
+    width: 200%;
+  }
+  .activites {
+    width: 45% !important;
+  }
+  .activites .box .box1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .activites .box .box1 .box__active {
+    flex-direction: column;
+  }
+  .activites .box .box1 .box__active img {
+    margin: auto;
+  }
+  .activites .box .box1 .box__time {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=master.css.map */

@@ -331,14 +331,14 @@ a {
   }
 }
 
-.welcome .body > div {
+.welcome .body>div {
   flex: 1;
 }
 
 /**End Welcome */
 
 @media (max-width: 767px) {
-  .welcome .body > div {
+  .welcome .body>div {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -353,7 +353,7 @@ a {
     margin-left: 0px;
   }
 
-  .welcome .body > div:not(:last-child) {
+  .welcome .body>div:not(:last-child) {
     margin-bottom: 20px;
   }
 }
@@ -413,14 +413,14 @@ a {
   height: 4px;
 }
 
-.targets .details .progress > span {
+.targets .details .progress>span {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
 }
 
-.targets .details .progress > span span {
+.targets .details .progress>span span {
   position: absolute;
   right: -16px;
   bottom: 16px;
@@ -444,15 +444,15 @@ a {
   }
 }
 
-.targets .details .progress > .blue span::after {
+.targets .details .progress>.blue span::after {
   border-top-color: $blue-color;
 }
 
-.targets .details .progress > .orange span::after {
+.targets .details .progress>.orange span::after {
   border-top-color: $orange-color;
 }
 
-.targets .details .progress > .green span::after {
+.targets .details .progress>.green span::after {
   border-top-color: $green-color;
 }
 
@@ -489,8 +489,7 @@ a {
     width: 100%;
   }
 
-  @media (max-width: 1200px) {
-  }
+  @media (max-width: 1200px) {}
 }
 
 /**Start lastest-news */
@@ -524,7 +523,7 @@ a {
       }
     }
 
-    > div {
+    >div {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -579,9 +578,6 @@ a {
     border-bottom: 1px solid #eee;
     padding-bottom: 13.5px;
   }
-}
-
-.news-row:not(:last-of-type) {
 }
 
 .item {
@@ -672,9 +668,6 @@ a {
   }
 }
 
-.last-project ul li.done {
-}
-
 .last-project ul li.done::before {
   content: "";
   background-color: #0075ff;
@@ -693,25 +686,25 @@ a {
     height: 15px;
   }
 
-  > .blue {
+  >.blue {
     margin-left: 15px;
     padding-left: 10px;
     border-left: 2px solid $blue-color;
   }
 
-  > .orange {
+  >.orange {
     margin-left: 15px;
     padding-left: 10px;
     border-left: 2px solid $orange-color;
   }
 
-  > .green {
+  >.green {
     margin-left: 15px;
     padding-left: 10px;
     border-left: 2px solid $green-color;
   }
 
-  > .red {
+  >.red {
     margin-left: 15px;
     padding-left: 10px;
     border-left: 2px solid $red-color;
@@ -753,7 +746,7 @@ a {
       flex-direction: column !important;
 
       .info {
-        > span {
+        >span {
           display: block;
           width: 100%;
           text-align: center;
@@ -813,6 +806,7 @@ a {
       border-spacing: 0;
       border-radius: 5px !important;
       overflow: hidden;
+
       thead {
         tr {
           background-color: #eee;
@@ -856,6 +850,7 @@ a {
         margin-left: -20px;
       }
     }
+
     td {
       text-align: center !important;
     }
@@ -881,6 +876,7 @@ a {
   -webkit-appearance: none;
   appearance: none;
 }
+
 .toggle-switch {
   background-color: #ccc;
   border-radius: 16px;
@@ -890,6 +886,7 @@ a {
   cursor: pointer;
   position: relative;
 }
+
 .fa-xmark,
 .fa-check {
   font-weight: 900;
@@ -904,23 +901,28 @@ a {
   color: #aaa;
   transition: all 0.3s;
 }
+
 .fa-xmark {
   top: 4px;
   left: 4px;
 }
+
 .fa-check {
   top: 4px;
   left: 50px;
   display: none !important;
 }
-.toggle-checkbox:checked + .toggle-switch {
+
+.toggle-checkbox:checked+.toggle-switch {
   background-color: $blue-color;
+
   .fa-xmark {
     left: 50px !important;
     transition: all 0.3s;
     color: $blue-color !important;
     // display: none !important;
   }
+
   .fa-check {
     left: 50px !important;
     transition: all 0.3s;
@@ -931,6 +933,7 @@ a {
 
 .settings-page {
   grid-template-columns: repeat(3, 1fr);
+
   .close-mess {
     border: 1px solid #ccc;
     resize: none;
@@ -964,6 +967,7 @@ a {
     width: 100%;
     outline: none;
     transition: all 0.6s;
+
     &:hover {
       box-shadow: 0 0 10px #ddd;
       border: #eee;
@@ -973,6 +977,7 @@ a {
   .email__input {
     cursor: no-drop;
     background-color: #eee;
+
     &:hover {
       box-shadow: 0 0 0 #888 !important;
       // border: ;
@@ -987,6 +992,7 @@ a {
     font-weight: 700;
     border: none;
     cursor: pointer;
+
     &:hover {
       background-color: rgba($color: $blue-color, $alpha: 0.2);
       border-radius: 16px;
@@ -1001,6 +1007,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   .pass__left {
     display: flex;
     flex-direction: column;
@@ -1011,12 +1018,14 @@ a {
       padding: 0;
       font-weight: 500;
     }
+
     p {
       margin: 0;
       padding: 0;
       color: #888;
     }
   }
+
   .pass__right {
     .btn {
       outline: none;
@@ -1026,28 +1035,33 @@ a {
     }
   }
 }
+
 .auth {
   display: flex !important;
   justify-content: space-between;
   align-items: center !important;
+
   .auth__left {
     display: flex;
     flex-direction: column;
     gap: 5px !important;
+
     span {
       margin: 0;
       padding: 0;
       font-weight: 500;
     }
+
     p {
       margin: 0;
       padding: 0;
       color: #888;
     }
   }
-  .auth__right {
-  }
+
+  .auth__right {}
 }
+
 .device .pass__right .btn {
   color: black;
   box-shadow: none !important;
@@ -1056,13 +1070,13 @@ a {
     box-shadow: 0 0 10px #ddd;
   }
 }
+
 .auth {
   .auth__left {
     display: flex;
     flex-direction: column;
     gap: 2px;
-    span {
-    }
+
     p {
       font-size: 15px;
     }
@@ -1077,7 +1091,7 @@ a {
   }
 }
 
-.search-items3 .body > div:not(:last-child) {
+.search-items3 .body>div:not(:last-child) {
   padding: 10px;
   border-bottom: 2px solid #eee;
 }
@@ -1087,15 +1101,18 @@ a {
   padding: 15px 0;
   // background-color: #0075ff;
 }
+
 .password {
   padding-bottom: 20px !important;
   padding-top: 20px !important;
   padding-left: 0 !important;
 }
+
 .device {
   padding-left: px;
   padding-right: 10px;
 }
+
 .auth {
   padding: 0 !important;
   margin: 0;
@@ -1113,6 +1130,7 @@ a {
       transition: 0.3s;
       @include flex-center();
     }
+
     input {
       height: 40px;
       background-color: #f6f6f6;
@@ -1123,16 +1141,19 @@ a {
   }
 }
 
-.social__boxes > div:focus-within .fa-twitter {
+.social__boxes>div:focus-within .fa-twitter {
   color: #0075ff;
 }
-.social__boxes > div:focus-within .fa-facebook {
+
+.social__boxes>div:focus-within .fa-facebook {
   color: $blue-color;
 }
-.social__boxes > div:focus-within .fa-instagram {
+
+.social__boxes>div:focus-within .fa-instagram {
   color: #f44336;
 }
-.social__boxes > div:focus-within .fa-youtube {
+
+.social__boxes>div:focus-within .fa-youtube {
   color: red;
 }
 
@@ -1142,6 +1163,7 @@ a {
   padding-left: 30px;
   cursor: pointer;
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -1158,11 +1180,14 @@ a {
 .widgets-control .control label:hover::before {
   border: 2px solid $blue-color;
 }
+
 .widgets-control .control {
   input[type="checkbox"] {
     appearance: none;
   }
+
   position: relative;
+
   .check__icon {
     font-weight: 900;
     background-color: var(--blue-color);
@@ -1178,7 +1203,8 @@ a {
     transform: scale(0) rotate(360deg);
     transition: 0.3s;
   }
-  input[type="checkbox"]:checked ~ .check__icon {
+
+  input[type="checkbox"]:checked~.check__icon {
     transform: scale(1);
   }
 }
@@ -1189,6 +1215,7 @@ a {
       padding-left: 30px;
       position: relative;
       cursor: pointer;
+
       &::before {
         content: "";
         position: absolute;
@@ -1201,6 +1228,7 @@ a {
         border-radius: 50%;
         // background-color: red;
       }
+
       &::after {
         content: "";
         position: absolute;
@@ -1214,23 +1242,28 @@ a {
         transform: scale(0);
       }
     }
+
     input[type="radio"] {
       appearance: none;
-      &:checked + label::before {
+
+      &:checked+label::before {
         // content: '';
         border-color: #0075ff;
       }
-      &:checked + label::after {
+
+      &:checked+label::after {
         transform: scale(1);
       }
     }
   }
+
   .servers {
     border-top: 1px solid #EEE;
     padding-top: 20px;
     height: 50%;
-    @media (max-width:767px) {
-    }
+
+    @media (max-width:767px) {}
+
     .server {
       label {
         display: flex;
@@ -1238,17 +1271,21 @@ a {
         gap: 5px;
         cursor: pointer;
       }
+
       padding: 15px 0;
       border: 1px solid #ddd;
     }
+
     input[type="radio"] {
       appearance: none;
-      &:checked + .server {
+
+      &:checked+.server {
         // content: '';
         border-color: $blue-color;
         color: #0075ff;
       }
     }
+
     // @media (max-width: 1200px) {
     //   display: flex;
     //   flex-direction: column;
@@ -1257,7 +1294,7 @@ a {
       display: flex;
       flex-direction: column;
     }
- 
+
   }
 }
 
@@ -1266,32 +1303,40 @@ a {
     page 3 Profile
 */
 
-.profile-page{
+.profile-page {
   margin-top: 40px !important;
-  .overview{
-    @media (max-width:767px) {
+
+  .overview {
+    @media (max-width:400px) {
+      overflow: hidden;
+      width: 90%;
       flex-direction: column;
     }
-    .avatar_box{
+
+    .avatar_box {
       padding: 20px;
       text-align: center;
-      img{
+
+      img {
         width: 120px;
         height: 120px;
       }
+
       width: 300px;
+
       @media (min-width:768px) {
         border-right: 1px solid #EEE;
       }
     }
-    .level{
+
+    .level {
       height: 6px !important;
       overflow: hidden;
       width: 70%;
       margin-top: 10px !important;
       margin: auto;
 
-      span{
+      span {
         position: absolute;
         top: 0;
         left: 0;
@@ -1303,59 +1348,75 @@ a {
   }
 }
 
-.profile-page{
- 
-  }
-  .overview{
-    .info_box{
-      .box{
-        display: flex ;
-        flex-wrap: wrap !important;
-        border-bottom: 1px solid #EEE;
-        transition: 0.3s all;
-        width: 100% !important;
-        // gap: 10px;
-        label{
-          display: flex;
-          align-items: center;
-        }
+.profile-page {}
+
+.overview {
+  .info_box {
+
+    .box {
+      h4 {
+        text-align: center;
       }
-      
-      .box:hover{
-        background-color: #f9f9f9;
-      }
-      .box .content__box{
-        width: 100%;   
+
+      display: flex;
+      flex-wrap: wrap !important;
+      border-bottom: 1px solid #EEE;
+      transition: 0.3s all;
+      width: 100% !important;
+
+      // gap: 10px;
+      label {
         display: flex;
-        flex-direction: row; 
-        padding-top: 20px;
-        justify-content: space-between;   
-      }
-       
+        align-items: center;
       }
     }
-  
+
+    .box:hover {
+      background-color: #f9f9f9;
+    }
+
+    .box .content__box {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      padding-top: 20px;
+      justify-content: space-between;
+
+      @media (max-width:767px) {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+      }
+    }
+
+  }
+}
+
 /* Start Training Code */
 .profile-page .info_box .toggle-switch {
   height: 20px;
+
   .fa-xmark {
     top: 3px;
     left: 7px;
+  }
 }
-}
-.profile-page .info_box .toggle-switch > i{
+
+.profile-page .info_box .toggle-switch>i {
   width: 14px;
   height: 14px;
 }
-.profile-page{
-  .toggle-checkbox:checked + .toggle-switch .fa-xmark {
+
+.profile-page {
+  .toggle-checkbox:checked+.toggle-switch .fa-xmark {
     top: 3px;
     left: 57px !important;
     transition: all 0.3s;
-    color: transparent !important; 
+    color: transparent !important;
     background-color: transparent !important;
   }
-  .toggle-checkbox:checked + .toggle-switch .fa-check {
+
+  .toggle-checkbox:checked+.toggle-switch .fa-check {
     left: 57px !important;
     top: 2.5px !important;
     transition: all 0.3s;
@@ -1370,17 +1431,23 @@ a {
   }
 }
 
-.profile-page{
-  .other__date{
-    .skills-card{
+.profile-page {
+  .other__date {
+    display: flex;
+    flex-direction: row;
+
+    .skills-card {
       width: 45%;
-      ul{
+
+      ul {
         list-style: none;
-        padding: 0px !important; 
-        li{ 
-          padding: 20px 0;  
+        padding: 0px !important;
+
+        li {
+          padding: 20px 0;
         }
-        li>span{
+
+        li>span {
           background-color: #eee;
           padding: 3px 10px;
           border-radius: 6px;
@@ -1390,40 +1457,48 @@ a {
           border: 1px solid #ddd;
           user-select: none;
         }
-        li:not(:last-child){ 
+
+        li:not(:last-child) {
           border-bottom: 1px solid #f1f1ff;
         }
       }
     }
-    .activites{
-      .box{
+
+    .activites {
+      .box {
         display: flex;
         flex-direction: column;
+
         // gap: 20px;
-        .box1{
+        .box1 {
           display: flex;
           justify-content: space-between;
-          align-items: center;  
+          align-items: center;
           padding: 20px 0;
         }
-        .box1:not(:last-child){
+
+        .box1:not(:last-child) {
           border-bottom: 1px solid #ddd;
         }
-        .box__active{
+
+        .box__active {
           display: flex;
           gap: 10px;
-          .header{
+
+          .header {
             display: flex;
-            flex-direction: column; 
+            flex-direction: column;
             justify-content: center;
             gap: 10px;
           }
-          img{
+
+          img {
             width: 64px;
             height: 64px;
           }
         }
-        .box__time{
+
+        .box__time {
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -1433,4 +1508,41 @@ a {
       }
     }
   }
+}
+
+@media (max-width:767px) {
+  .profile-page .other__date {
+    display: flex;
+    flex-direction: column !important;
+    width: 200%;
+
+    .skills-card {
+      ul {
+        // text-align: center;
+      }
+    }
+  }
+
+  .activites {
+    width: 45% !important;
+
+    .box .box1 {
+      flex-direction: column;
+      text-align: center;
+
+      .box__active {
+        flex-direction: column;
+
+        img {
+          margin: auto;
+        }
+      }
+
+      .box__time {
+        flex-direction: column;
+
+      }
+    }
+  }
+
 }
