@@ -24,3 +24,21 @@
  Courses
 </h1>
 <img align="center" src="https://user-images.githubusercontent.com/57854391/197516477-cf8254e9-c926-4556-a22d-c53c97b7aaaa.png">
+
+
+<h1 align="center">
+  Friends
+</h1>
+<img align="center" src="https://user-images.githubusercontent.com/57854391/197537390-ef2e55fc-322d-4ee5-b290-180f62f71fe9.png">
+
+
+<h1 align="center">
+  Files
+</h1>
+<img align="center" src="">
+
+
+<h1 align="center">
+  Plans
+</h1>
+<img align="center" src="">
