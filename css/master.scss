@@ -47,7 +47,7 @@ a {
 
 .slider {
   padding: 20px 10px;
-  width: 200px;
+  width: 250px;
   box-shadow: 0 0 10px #ddd;
 
   h3 {
@@ -1515,12 +1515,6 @@ a {
     display: flex;
     flex-direction: column !important;
     width: 200%;
-
-    .skills-card {
-      ul {
-        // text-align: center;
-      }
-    }
   }
 
   .activites {
@@ -1540,9 +1534,112 @@ a {
 
       .box__time {
         flex-direction: column;
-
       }
     }
   }
+}
 
+// Project page 
+.project__page {
+  margin-top: 40px !important;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+
+  @media (max-width:767px) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+
+  }
+
+  .project {
+    .team {
+      position: relative;
+      min-height: 80px;
+
+      a {
+        position: absolute;
+        left: 0;
+        bottom: 0; 
+        &:hover{
+          z-index: 1000;
+        }
+      }
+ 
+
+      @for $i from 0 through 5 {
+
+        a:nth-child(#{1+$i}) {
+          left: $i * 25px;
+        }
+      }
+
+  
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid white;
+
+      }
+    }
+    .skills{
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      margin: 20px 0; 
+      justify-content: end;
+      @media (max-width:767px) {
+        flex-direction: column;
+      }
+      div{
+        padding: 3px 8px ;
+        font-weight: 200;
+        font-size: small;
+        border-radius: 5px;
+        margin: 10px 15px 10px 0;
+        user-select: none;
+        transition: all 0.5s;
+        width: fit-content;
+       &:hover{
+        box-shadow: 0 0 1px black;
+       }
+      }
+    }
+    .info{
+      @media  (max-width:767px) {  
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        .prog{
+        width: 200px !important;
+
+        }
+      }
+      .prog{
+        height: 8px;
+        width: 260px;
+        position: relative;
+        border-radius: 6px ;
+        span{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          border-radius: 6px;
+        }
+      }
+
+    }
+  }
+
+  .project .header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    h3 {
+      font-weight: 400 !important;
+    }
+  }
 }

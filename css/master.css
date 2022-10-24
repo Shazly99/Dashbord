@@ -38,7 +38,7 @@ a {
 /*start sideabre*/
 .slider {
   padding: 20px 10px;
-  width: 200px;
+  width: 250px;
   box-shadow: 0 0 10px #ddd;
 }
 .slider h3 {
@@ -1328,4 +1328,112 @@ a {
   .activites .box .box1 .box__time {
     flex-direction: column;
   }
+}
+.project__page {
+  margin-top: 40px !important;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+  .project__page {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+.project__page .project .team {
+  position: relative;
+  min-height: 80px;
+}
+.project__page .project .team a {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.project__page .project .team a:hover {
+  z-index: 1000;
+}
+.project__page .project .team a:nth-child(1) {
+  left: 0px;
+}
+.project__page .project .team a:nth-child(2) {
+  left: 25px;
+}
+.project__page .project .team a:nth-child(3) {
+  left: 50px;
+}
+.project__page .project .team a:nth-child(4) {
+  left: 75px;
+}
+.project__page .project .team a:nth-child(5) {
+  left: 100px;
+}
+.project__page .project .team a:nth-child(6) {
+  left: 125px;
+}
+.project__page .project .team img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.project__page .project .skills {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 20px 0;
+  justify-content: end;
+}
+@media (max-width: 767px) {
+  .project__page .project .skills {
+    flex-direction: column;
+  }
+}
+.project__page .project .skills div {
+  padding: 3px 8px;
+  font-weight: 200;
+  font-size: small;
+  border-radius: 5px;
+  margin: 10px 15px 10px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: all 0.5s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.project__page .project .skills div:hover {
+  box-shadow: 0 0 1px black;
+}
+@media (max-width: 767px) {
+  .project__page .project .info {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .project__page .project .info .prog {
+    width: 200px !important;
+  }
+}
+.project__page .project .info .prog {
+  height: 8px;
+  width: 260px;
+  position: relative;
+  border-radius: 6px;
+}
+.project__page .project .info .prog span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 6px;
+}
+.project__page .project .header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.project__page .project .header h3 {
+  font-weight: 400 !important;
 }/*# sourceMappingURL=master.css.map */
