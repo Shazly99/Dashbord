@@ -362,6 +362,10 @@
   position: relative;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .p-absolute {
   position: absolute;
 }
