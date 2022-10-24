@@ -25,4 +25,9 @@
 </h1>
 <img align="center" src="https://user-images.githubusercontent.com/57854391/197502449-da8ea55c-6745-4cdd-a954-fe8700ede39a.png">
 
+   <h1 align="center">
+ Courses
+</h1>
+<img align="center" src="https://user-images.githubusercontent.com/57854391/197516477-cf8254e9-c926-4556-a22d-c53c97b7aaaa.png">
+
  

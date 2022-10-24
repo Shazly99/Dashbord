@@ -190,6 +190,10 @@
   margin-top: 10px;
 }
 
+.mt-15 {
+  margin-top: 15px;
+}
+
 .mb-10 {
   margin-bottom: 10px;
 }
@@ -284,6 +288,10 @@
 
 .p-10 {
   padding: 10px 10px 10px 10px;
+}
+
+.p-5 {
+  padding: 5px;
 }
 
 .pb-25 {

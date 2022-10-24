@@ -1643,3 +1643,51 @@ a {
     }
   }
 }
+
+/**
+    courses__page
+*/
+
+.courses__page{
+  grid-template-columns: repeat(auto-fit, minmax(300px, 14.6rem));
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  @media (max-width:767px) {
+    grid-template-columns: minmax(200px,1fr);
+  }
+    .course{
+      .cover{
+          border-radius: 7px 7px 0 0;
+          width: 100%;
+      }
+      .instructor{
+          border-radius: 50%;
+          border: 2px solid white;
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          top: 20px;
+          left: 20px;
+      }
+      .info{ 
+        @include flex-center();  
+        padding-top: 0px !important;
+        span{ 
+          font-size: 13px;
+        }
+      }
+      .content{
+        padding: 0 20px;
+        padding-bottom: 20px;
+      }
+      .header{ 
+        padding: 20px 20px 0 20px;
+        padding-bottom: 0px;
+        .description{
+          line-height:1.6;
+
+        }
+      }
+  } 
+}

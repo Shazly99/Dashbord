@@ -181,7 +181,9 @@ $color-yellow:yellow;
 .mt-10 {
     margin-top: 10px;
 }
-
+.mt-15{
+    margin-top: 15px;
+}
 .mb-10 {
     margin-bottom: 10px;
 }
@@ -268,6 +270,9 @@ $color-yellow:yellow;
 
 .p-10 {
     padding: 10px 10px 10px 10px;
+}
+.p-5 {
+    padding: 5px;
 }
 .pb-25{
     padding-bottom: 25px;
@@ -476,3 +481,4 @@ h2{
         text-align: center;
     }
 }
+
