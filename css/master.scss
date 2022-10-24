@@ -1816,6 +1816,7 @@ a {
 }
 
 .files__page{
+ 
   .files__stats{
     min-width: 260px !important; 
 
@@ -1874,7 +1875,12 @@ a {
 .files__page{ 
   flex-direction: row-reverse !important;
   align-items: flex-start;
-
+  @media (max-width:767px) {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content:  center !important;
+    align-items: center;
+  }
   .files__content{
     flex: 1;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -1902,5 +1908,71 @@ a {
   }
 }
 
-.files__page .files__content {
+.fa-check-square{
+  color: #22c55e;
+  
+}
+
+.plans-page{
+  grid-template-columns: repeat(auto-fill, minmax(450px ,1fr));
+  @media (max-width:767px) {
+  grid-template-columns: minmax(250px ,1fr);
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 10px;
+  }
+  .plan{
+    .price{
+      position: relative;
+      font-size: 40px;
+      width: fit-content;
+      margin: auto;
+      span{
+        position: absolute;
+        left: -20px;
+        top: 0;
+        font-size: 25px;
+      }
+    }
+    ul{
+      list-style: none; 
+      padding-left: 0;
+
+      li{
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        border-bottom: 1px solid #EEE;
+        i{
+          margin-right: 10px;
+        }
+        .help{
+          cursor: pointer;
+          color: $grey-color;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+  .top{
+    border: 3px solid white;
+    outline: 3px solid transparent;
+  }
+  .plan.green{
+    .top{
+      outline-color: $green-color;
+    }
+  }
+  .plan.blue{
+    .top{
+      outline-color: $blue-color;
+    }
+  }
+
+  .plan.orange{
+    .top{
+      outline-color: $orange-color;
+    }
+  }
 }
